@@ -1,0 +1,15 @@
+# Arch Linx
+BraveSoftware/
+JetBrains/
+discord/
+VSCodium/
+spotify/
+spicetify/
+obs-studio/
+cef_user**/
+.oh-my-zsh/
+.oh-my-zsh/**
+Code**/**
+/zsh/.zscomp**
+/zsh/.zsh_sessions**
+google-chrome/

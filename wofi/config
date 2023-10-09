@@ -1,0 +1,16 @@
+key_up=Control_L-p
+key_down=Control_L-n
+term=alacritty
+
+show=drun
+width=750
+height=400
+always_parse_args=true
+show_all=false
+print_command=true
+insensitive=true
+prompt= Hmm, what do you want to run?
+
+
+command0 = "/usr/share/applications/pycharm-2023.2.1/bin/pycharm.sh"
+label0 = "WebStorm"
