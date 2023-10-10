@@ -1,5 +1,7 @@
-# the MOD key(windows)
+# M O D - K E Y (Mode4: windows)
 set $mod Mod4
+
+# S T A R T - U P
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id sh ~/.config/polybar/launch.sh
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
@@ -7,15 +9,13 @@ exec --no-startup-id nm-applet
 exec --no-startup-id udiskie &
 exec --no-startup-id pcmanfm -d
 
-#for_window [class="^.*"] border normal 10
-
 # W A L L P A P E R
 # sets the wallpaper
 exec --no-startup-id nitrogen --restore
 
+# G A P S
 gaps inner 6
 #gaps outer 10
-
 #bindsym $mod+z		gaps outer current plus  5 
 #bindsym $mod+Shift+z	gaps outer current minus 5
 
@@ -25,70 +25,72 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 
-# removes the titlebar
-#for_window [class="^.*"] border pixel 2
-#for_window [class="krunner"] border pixel 2
-#for_window [class="krunner"] floating enable
+
+# W I N D O W - C U S T O M I Z A T I O N
+# A L L
+for_window [class="^.*"] border normal 2
+# removes the title bar
+for_window [class="^.*"] border pixel 2, #f5c2e7		
+# S P E C I F I C - (use `xprop` and select the window for its details)
+# class is the WM_
+#for_window [class="Pavucontrol"] border pixel 10
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Blueman-manager"] floating enable
+for_window [class="Picture-in-picture"] sticky disable
+for_window [class="^.*"] sticky disable
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# A P P L I C A T I O N - L A U N C H
 bindsym $mod+Return exec alacritty
-
-# start the launcher
 bindsym Mod1+space exec rofi -show drun
-
-# start brave
+bindsym $mod+f exec thunar
 bindsym $mod+b exec brave
 
-# kill focused window
+# W I N D O W  - K I L L
 bindsym $mod+q kill
 
-# change focus
+# W I N D O W - F O C U S
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# move focused window
+# W I N D O W - M O V E
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# split in horizontal orientation
-#bindsym $mod+Ctrl+h split h
-
-# split in vertical orientation
+# W I N D O W - S P L I T (h:horizontal, v:vertical orientation)
+bindsym $mod+Ctrl+h split h
 bindsym $mod+Ctrl+v split v
 
-# enter fullscreen mode for the focused container
+# W I N D O W - F U L L  S C R E E N
 #bindsym $mod+f fullscreen toggle
-bindsym $mod+f exec thunar
 
-# change container layout (stacked, tabbed, toggle split)
+# L A Y O U T - C H A N G E (stacked, tabbed, toggle split)
 bindsym $mod+Shift+s layout stacking
 bindsym $mod+Shift+t layout tabbed
 bindsym $mod+Shift+b layout toggle split
 
-# toggle tiling / floating
+# W I N D O W  T O G G L E - T I L I N G / F L O A T I N G
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
+# W I N D O W  F O C U S - T I L I N G / F L O A T I N G
 bindsym $mod+space focus mode_toggle
 
-# focus the parent container
+# P A R E N T - C O N T A I N E R
 #bindsym $mod+a focus parent
 
-#Screenshot
+# S C R E E N S H O T
 bindsym Shift+Print exec flameshot gui
 
-# font in use by i3
+# F O N T
 font pango:Berkeley Mono 11
 
-
-# Workspace names
+# W O R K S P A C E - N A M E S
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
@@ -101,7 +103,7 @@ set $ws6 6
 set $ws7 7
 set $ws8 8
 
-# switch to workspace
+# W O R K S P A C E - S W I T C H
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -113,29 +115,29 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
+# W O R K S P A C E - M O V E & F O C U S
+# move focused container to workspace, focus after move
+bindsym $mod+Shift+1 move container to workspace number $ws1, workspace $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2, workspace $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3, workspace $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4, workspace $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5, workspace $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6, workspace $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7, workspace $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8, workspace $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9, workspace $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10, workspace $ws10
 
-# Moving workspaces between screens
+# M O V E  W O R K S P A C E  b/w  S C R E E N S
 bindsym $mod+p move workspace to output right
 
-# reload the configuration file
+# R E L O A D  &  R E S T A R T - I3
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
+# E X I T - I3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'do you want to quit i3 (◕‿◕ ✿) ?' -B 'YEAH FUCK THIS SHIT' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
+# W I N D O W - R E S I Z E
 mode "resize" {
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
@@ -147,19 +149,18 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-# class                 border  backgr. text    indicator child_border
+bindsym $mod+r mode "resize"
 
-client.focused          #f5c2e7 #f5c2e7 #1e2e2e #2e9ef4   #285577
+# C O L O R S
+# class                 border  backgr. text    indicator child_border
+client.focused          #f5c2e7 #f5c2e7 #1e2e2e #2e9ef4   #f5c2e7
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
 client.background       #ffffff
 
-bindsym $mod+r mode "resize"
-
-# Pulse Audio controls
+# A U D I O
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
@@ -167,6 +168,5 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # B R I G T N E S S
 bindsym XF86MonBrightnessDown exec brightnessctl --min-val=2 -q set 3%-
 bindsym XF86MonBrightnessUp exec brightnessctl -q set 3%+
-
 
 
