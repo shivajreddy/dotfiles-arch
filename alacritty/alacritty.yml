@@ -13,29 +13,26 @@ scrolling:
 
 font:
   normal:
-    family: "Berkeley Mono"
+    family: "BerkeleyMono Nerd Font Mono"
     style:  Regular
   bold:
-    family: "Berkeley Mono"
+    family: "BerkeleyMono Nerd Font Mono"
     style:  Bold
   italic:
-    family: "Berkeley Mono"
+    family: "BerkeleyMono Nerd Font Mono"
     style:  Italic
   bold_italic:
-    family: "Berkeley Mono"
+    family: "BerkeleyMono Nerd Font Mono"
     style: Bold Italic
-  size: 8
+  size: 12
 draw_bold_text_with_bright_colors: true
 
 import:
   - ~/.config/alacritty/themes/catppuccin-mocha.yml
 
 selection:
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 shell:
   program: /usr/bin/zsh
-
-key_bindings:
-  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
 
