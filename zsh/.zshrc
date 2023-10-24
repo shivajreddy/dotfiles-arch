@@ -10,6 +10,7 @@ alias pva="source venv/bin/activate"
 alias pip="python3 -m pip"
 
 alias p="pacman"
+# alias todo ="cd ~/todo && vi todo.md"
 
 
 plugins=(git
