@@ -1,5 +1,6 @@
-/* @import "./colorschemes/nightowl.css"; */
-@import "./colorschemes/everforest.css";
+@import "./colorschemes/nightowl.css"; 
+/* @import "./colorschemes/everforest.css"; */
+/* @import "./colorschemes/mocha.css"; */
 
 * {
   font-family: Open Sans;
