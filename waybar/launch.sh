@@ -10,7 +10,7 @@ killall waybar
 # ----------------------------------------------------- 
 if [[ $USER = "raabe" ]]
 then
-    waybar -c ~/dotfiles/waybar/myconfig & -s ~/dotfiles/waybar/style.css  
+    waybar -c ~/dotfiles/waybar/config & -s ~/dotfiles/waybar/style.css  
 else
     waybar &
 fi 
