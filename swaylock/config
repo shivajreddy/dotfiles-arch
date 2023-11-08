@@ -1,9 +1,10 @@
 ignore-empty-password
-font=Ubuntu
+font=JetBrainsMono
+image=/home/shiva/Pictures/wallpapers/anime-night-city.jpg
 
 clock
 timestr=%R
-datestr=%a, %e of %B
+datestr=%a, %e %B
 
 screenshots
 
