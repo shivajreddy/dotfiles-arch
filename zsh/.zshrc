@@ -2,6 +2,8 @@ export ZSH="$HOME/.config/zsh/.oh-my-zsh"
 
 #ZSH_THEME="robbyrussell"
 
+alias sshgcp="cd ~/mySSHKeys && ssh -i shiva_ssh_key shiva@34.139.78.157"
+
 alias vi="nvim"
 alias vim="nvim"
 alias py="python3"

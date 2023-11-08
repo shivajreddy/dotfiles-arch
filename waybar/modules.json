@@ -10,9 +10,9 @@
 			"active": "",
 			"default": ""
         },
-        "persistent_workspaces": {
-             "*": 5
-        }       
+        //"persistent_workspaces": {
+        //     "*": 5
+        //}       
     },
 
     // Taskbar
