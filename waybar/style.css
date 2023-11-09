@@ -11,12 +11,12 @@
     border-radius: 0px;
     padding: 0;
     margin: 0;
+    /* border-radius: 15px; */
 }
 
 window#waybar {
     /*background: transparent;*/
-    background: @crust;
-    /*background-color: @crust;*/
+    background-color: @crust;
     /*border-bottom: 1px solid @text;*/
     /*border: 1px solid @mantle;*/
     color: @text;
@@ -30,9 +30,8 @@ window#waybar {
 
 #workspaces {
     background: @base;
-    margin: 2px 1px 3px 1px;
+    /* margin: 2px 1px 3px 1px; */
     padding: 0px 1px;
-    border-radius: 15px;
     border:0px;
     font-weight: bold;
     font-style: normal;
@@ -42,8 +41,7 @@ window#waybar {
 
 #workspaces button {
     padding: 1px 9px;
-    margin: 3px 3px;
-    border-radius: 15px;
+    /* margin: 3px 3px; */
     border:0px;
     color: @subtext1;
     background-color: @base;
@@ -54,7 +52,6 @@ window#waybar {
 #workspaces button.active {
     color: @pink;
     background: @surface0;
-    border-radius: 15px;
     min-width: 40px;
     transition: all 0.3s ease-in-out;
     opacity:1.0;
@@ -63,7 +60,6 @@ window#waybar {
 #workspaces button:hover {
     color: @pink;
     background: @surface0;
-    border-radius: 10px;
     opacity:0.7;
 }
 
@@ -72,7 +68,6 @@ window#waybar {
  * ----------------------------------------------------- */
 
 tooltip {
-    border-radius: 10px;
     background-color: @surface0;
     opacity:0.8;
     padding:20px;
@@ -88,10 +83,9 @@ tooltip label {
  * ----------------------------------------------------- */
 
 #window {
-    background: @base;
-    margin: 5px 15px 5px 0px;
-    padding: 2px 10px 0px 10px;
-    border-radius: 10px;
+    /* background: @base; */
+    /* margin: 5px 15px 5px 0px; */
+    /* padding: 2px 10px 0px 10px; */
     color:@subtext0;
     font-weight:normal;
     opacity:0.8;
@@ -108,14 +102,15 @@ window#waybar.empty #window {
 #taskbar {
     /* background: @color11; */
     /* background: @surface0; */
-    margin: 3px 15px 3px 15px;
+    /* margin: 3px 15px 3px 15px; */
+    margin-left: 15px;
+    margin-right: 15px;
     /* padding:0px; */
     padding: 2px 3px 1px 3px;
     font-weight: normal;
     font-style: normal;
     opacity:0.8;
-    border: 1px solid @surface2;
-    border-radius: 10px;
+    /* border: 1px solid @surface2; */
 }
 
 #taskbar button {
@@ -140,7 +135,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-brave, #custom-outlook, #custom-filemanager, #custom-teams, #custom-chatgpt, #custom-calculator, #custom-windowsvm, #custom-cliphist, #custom-wallpaper {
-    margin-right:20px;
+    /* margin-right:20px; */
     font-weight:bold;
     opacity:0.8;
     color:@text;
@@ -162,13 +157,12 @@ window#waybar.empty #window {
 
 
 #custom-appmenu {
-    background-color: @base;
+    /* background-color: @base; */
     color: @text;
     padding: 0px 10px 0px 10px;
-    margin: 3px 15px 3px 14px;
+    /* margin: 3px 15px 3px 14px; */
     opacity:0.8;
     border: 1px solid @surface2;
-    border-radius: 10px;
 }
 
 /* -----------------------------------------------------
@@ -192,7 +186,6 @@ window#waybar.empty #window {
     margin: 5px 15px 5px 0px;
     opacity:0.8;
     border: 1px solid @surface2;
-    border-radius: 10px;
 }
 
 #custom-updates.green {
@@ -220,7 +213,6 @@ window#waybar.empty #window {
     margin: 5px 15px 5px 0px;
     opacity:0.8;
     border: 1px solid @surface2;
-    border-radius: 10px;
 }
 
 /* -----------------------------------------------------
@@ -233,15 +225,17 @@ window#waybar.empty #window {
 }
 
 #cpu {
-    border-radius: 10px 0px 0px 10px;
-    padding: 2px 0px 0px 10px;
-    margin: 5px 0px 5px 0px;
+    /* border-radius: 10px 0px 0px 10px; */
+    /* padding: 2px 0px 0px 10px; */
+    /* margin: 5px 0px 5px 0px; */
+    padding: 0px 0px 0px 20px;
     opacity:0.8;
 }
 #memory {
-    border-radius: 0px 10px 10px 0px;
-    padding: 2px 2px 0px 0px;
-    margin: 5px 15px 5px 0px;
+    /* border-radius: 0px 10px 10px 0px; */
+    /* padding: 2px 2px 0px 0px; */
+    /* margin: 5px 15px 5px 0px; */
+    /* padding: 0px 20px; */
     opacity:0.8;
 }
 
@@ -250,11 +244,12 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #clock {
-    padding: 1px 10px 0px 10px;
-    margin: 3px 15px 3px 0px;
+    /* padding: 1px 10px 0px 10px; */
+    /* margin: 3px 15px 3px 0px; */
+    padding: 0px 20px;
     opacity:0.8;
     /*border: 1px solid @surface2;*/
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background-color: @base;
     color: @text;
 }
@@ -268,11 +263,12 @@ window#waybar.empty #window {
 #pulseaudio {
     background-color: @base;
     color: @text;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
+    /* padding: 2px 10px 0px 10px; */
+    /* margin: 5px 15px 5px 0px; */
+    padding: 0px 20px;
     opacity:0.8;
     /* border: 1px solid @surface2; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 #pulseaudio.muted {
@@ -287,11 +283,11 @@ window#waybar.empty #window {
 #network {
     background-color: @base;
     color: @text;
-    padding: 2px 10px 0px 10px;
-    margin: 3px 10px 3px 0px;
+    /* padding: 2px 10px 0px 10px; */
+    /* margin: 3px 10px 3px 0px; */
     opacity:0.8;
     border: 1px solid @surface2;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 #network.ethernet {
@@ -311,9 +307,10 @@ window#waybar.empty #window {
 #bluetooth.on, #bluetooth.connected {
     background-color: @base;
     color: @text;
-    border-radius: 10px;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
+    /* border-radius: 10px; */
+    /* padding: 2px 10px 0px 10px; */
+    /* margin: 5px 15px 5px 0px; */
+    padding: 0px 20px;
     opacity:0.8;
 }
 
@@ -330,9 +327,11 @@ window#waybar.empty #window {
 #battery {
     background-color: @base;
     color: @text;
-    border-radius: 10px;
-    padding: 2px 15px 0px 10px;
-    margin: 5px 15px 5px 0px;
+    /* border-radius: 10px; */
+    /* padding: 2px 15px 0px 10px; */
+    /* margin: 5px 15px 5px 0px; */
+    padding: 0px 20px;
+    /* margin: 0px 5px; */
     opacity:0.8;
 }
 
@@ -397,10 +396,10 @@ label:focus {
 
 #custom-swaync{
     padding: 1px 10px 0px 10px;
-    margin: 3px 15px 3px 0px;
+    /* margin: 3px 15px 3px 0px; */
     opacity:0.8;
     /*border: 1px solid @surface2;*/
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background-color: @base;
     color: @text;
 }

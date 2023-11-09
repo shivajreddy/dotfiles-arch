@@ -1,4 +1,5 @@
 export ZSH="$HOME/.config/zsh/.oh-my-zsh"
+export PATH=$PATH:/home/shiva/.spicetify
 
 #ZSH_THEME="robbyrussell"
 

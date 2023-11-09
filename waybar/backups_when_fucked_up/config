@@ -1,10 +1,15 @@
-{
+[{
+    // Show only on monitor. next object has the settings of
+    // waybar on another output
+    "output": "eDP-1",
+
     // General Settings
 
     // Position TOP
     "layer": "top",
     "margin-top": 0,
     "margin-bottom": 0,
+
 
     // Position BOTTOM
     // "position": "bottom",
@@ -67,4 +72,82 @@
             "memory"
         ]
     }
-}
+},
+{
+    // Show only on monitor.
+    // "output": "DP-1",
+    "output": "DP-4",
+
+    // General Settings
+
+    // Position TOP
+    "layer": "top",
+    "margin-top": 0,
+    "margin-bottom": 0,
+
+
+    // Position BOTTOM
+    // "position": "bottom",
+    // "margin-top": 0,
+    // "margin-bottom": 14,
+    
+    "layer": "top",
+    "height": 14,
+    "margin-left": 0,
+    "margin-right": 0,    
+    "spacing": 0,
+
+    // Load Modules
+    "include": ["~/.config/waybar/modules.json"],
+
+    // Modules Left
+    "modules-left": [
+        "custom/archlogo",
+        //"custom/appmenu",
+        // "custom/wallpaper",
+        "wlr/taskbar",
+        // "group/quicklinks",
+        "hyprland/window"
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+        //"custom/updates",
+        "pulseaudio",
+        "bluetooth",
+        "group/hardware",
+        "battery", 
+        //"custom/cliphist",
+        //"network",
+        //"custom/exit",
+        "clock",
+	"custom/swaync"
+    ],
+
+    // Group Quicklinks
+    "group/quicklinks": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/filemanager",
+            "custom/brave",
+         ]
+    },
+
+    // Group Hardware
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            //"disk",
+            "cpu",
+            "memory"
+        ]
+    }
+
+
+
+}]
