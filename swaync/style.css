@@ -1,4 +1,4 @@
-@import "./colorschemes/nightowl.css"; 
+/* @import "./colorschemes/nightowl.css";  */
 /* @import "./colorschemes/everforest.css"; */
 /* @import "./colorschemes/mocha.css"; */
 
@@ -10,24 +10,28 @@
 .control-center .notification-row:hover {
   opacity: 1;
   border-radius: 10px;
-  background: transparent;
+  /* background: transparent; */
+  background-color: #1E1E2E;
 }
 
 .control-center .notification-default-action,
 .control-center .notification-action {
-  background: @noti-bg;
+  /* background: @noti-bg; */
+  background-color: #1E1E2E;
   border: 1px solid @noti-border-color;
 }
 
 .control-center .notification-default-action,
 .control-center .notification-action {
-  background: @noti-bg;
+  /* background: @noti-bg; */
+  background: #1e1e2e;
   border: 2px solid @noti-border-color;
 }
 
 .control-center .notification-default-action:hover,
 .control-center .notification-action:hover {
-  background: @noti-bg-hover;
+  /* background: @noti-bg-hover; */
+  background: #313244;
 }
 
 .notification-row {
@@ -143,7 +147,8 @@
 }
 .inline-reply-button {
   margin-left: 4px;
-  background: @noti-bg;
+  /* background: @noti-bg; */
+  background-color: #1E1E2E;
   border: 1px solid @noti-border-color;
   border-radius: 12px;
   color: @text-color;
@@ -154,7 +159,8 @@
   border: 1px solid transparent;
 }
 .inline-reply-button:hover {
-  background: @noti-bg-hover;
+  /* background: @noti-bg-hover; */
+  background: #313244;
 }
 
 .image {
@@ -212,7 +218,8 @@
 
 /* Window behind control center and on all other monitors */
 .blank-window {
-  background: alpha(black, 0.2);
+  /* background: alpha(black, 0.2); */
+  background: alpha(#1e1e2e, 0.2);
 }
 
 /*** Widgets ***/
@@ -229,13 +236,15 @@
   font-size: initial;
   color: @text-color;
   text-shadow: none;
-  background: @noti-bg;
+  /* background: @noti-bg; */
+  background-color: #1E1E2E;
   border: 1px solid @noti-border-color;
   border-radius: 10rem;
   padding: 5px 15px 5px 15px;
 }
 .widget-title > button:hover {
-  background: @noti-bg-hover;
+  /* background: @noti-bg-hover; */
+  background: #313244;
 }
 
 /* DND widget */
@@ -255,7 +264,8 @@
   background: @bg-selected;
 }
 .widget-dnd > switch slider {
-  background: @noti-bg-hover;
+  /* background: @noti-bg-hover; */
+  background: #313244;
   border-radius: 10rem;
 }
 
@@ -271,7 +281,8 @@
 .widget-mpris {
   margin: 0.4rem 0.4rem 0.4rem;
   margin-top: 0.4rem;
-  background: @noti-bg;
+  /* background: @noti-bg; */
+  background-color: #1E1E2E;
   color: @text-color;
   border-radius: 10px;
   border: 2px solid @noti-border-color;
@@ -301,7 +312,8 @@
 /* Volume widget */
 
 .widget-volume {
-  background-color: @noti-bg;
+  /* background-color: @noti-bg; */
+  background-color: #1E1E2E;
   color: @text-color;
   margin: 0.4rem;
   margin-bottom: 1rem;
@@ -317,7 +329,8 @@
 }
 
 .per-app-volume {
-  background-color: @noti-bg;
+  /* background-color: @noti-bg; */
+  background-color: #1E1E2E;
   padding: 4px 8px 8px 8px;
   margin: 0px 8px 8px 8px;
   border-radius: 12px;
@@ -332,11 +345,13 @@
   font-size: initial;
   color: @text-color;
   text-shadow: none;
-  background: @noti-bg;
+  /* background: @noti-bg; */
+  background-color: #1E1E2E;
   border: 1px solid @noti-border-color;
   box-shadow: none;
   border-radius: 12px;
 }
 .widget-inhibitors > button:hover {
-  background: @noti-bg-hover;
+  /* background: @noti-bg-hover; */
+  background: #313244;
 }
