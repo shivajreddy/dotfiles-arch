@@ -14,6 +14,8 @@ alias pip="python3 -m pip"
 
 alias nf="neofetch"
 
+alias gitsave="gaa && gcmsg '.' && ggpush"
+
 alias p="pacman"
 alias todo="cd ~/todo && vi todo.md"
 
