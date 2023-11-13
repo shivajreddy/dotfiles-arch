@@ -15,19 +15,39 @@ font:
   size: 12
   normal:
     family: "JetBrainsMonoNerdFont"
-      #family: "BerkeleyMono Nerd Font Mono"
+    # family: "BerkeleyMono Nerd Font Mono"
+    # family: "MonaspaceNeon"
+    # family: "MonaspaceArgon"
+    # family: "MonaspaceXenon"
+    # family: "MonaspaceRadon"
+    # family: "MonaspaceKrypton"
     style:  Regular
   bold:
-    family: "JetBrainsMonoNerdFont"
-      #family: "BerkeleyMono Nerd Font Mono"
+    # family: "JetBrainsMonoNerdFont"
+    # family: "BerkeleyMono Nerd Font Mono"
+    family: "MonaspaceNeon"
+    # family: "MonaspaceArgon"
+    # family: "MonaspaceXenon"
+    # family: "MonaspaceRadon"
+    # family: "MonaspaceKrypton"
     style:  Bold
   italic:
-    family: "JetBrainsMonoNerdFont"
-      #family: "BerkeleyMono Nerd Font Mono"
+    # family: "JetBrainsMonoNerdFont"
+    # family: "BerkeleyMono Nerd Font Mono"
+    family: "MonaspaceNeon"
+    # family: "MonaspaceArgon"
+    # family: "MonaspaceXenon"
+    # family: "MonaspaceRadon"
+    # family: "MonaspaceKrypton"
     style:  Italic
   bold_italic:
-    family: "JetBrainsMonoNerdFont"
-      #family: "BerkeleyMono Nerd Font Mono"
+    # family: "JetBrainsMonoNerdFont"
+    # family: "BerkeleyMono Nerd Font Mono"
+    family: "MonaspaceNeon"
+    # family: "MonaspaceArgon"
+    # family: "MonaspaceXenon"
+    # family: "MonaspaceRadon"
+    # family: "MonaspaceKrypton"
     style: Bold Italic
 draw_bold_text_with_bright_colors: true
 
