@@ -75,8 +75,8 @@
 },
 {
     // Show only on monitor.
-    "output": "DP-1",
-    // "output": "DP-4",
+    //"output": "DP-1",
+     "output": "DP-4",
 
     // General Settings
 

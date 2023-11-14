@@ -3,7 +3,8 @@ export PATH=$PATH:/home/shiva/.spicetify
 
 #ZSH_THEME="robbyrussell"
 
-alias sshgcp="cd ~/mySSHKeys && ssh -i shiva_ssh_key shiva@34.139.78.157"
+# alias sshgcp="cd ~/mySSHKeys && ssh -i shiva_ssh_key shiva@34.139.78.157"
+alias sshgcp="cd ~/mySSHKeys && ssh -i shiva_ssh_key shiva@34.148.73.253"
 
 alias vi="nvim"
 alias vim="nvim"
