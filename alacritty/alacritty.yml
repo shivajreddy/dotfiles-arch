@@ -23,27 +23,27 @@ font:
     # family: "MonaspaceKrypton"
     style:  Regular
   bold:
-    # family: "JetBrainsMonoNerdFont"
+    family: "JetBrainsMonoNerdFont"
     # family: "BerkeleyMono Nerd Font Mono"
-    family: "MonaspaceNeon"
+    # family: "MonaspaceNeon"
     # family: "MonaspaceArgon"
     # family: "MonaspaceXenon"
     # family: "MonaspaceRadon"
     # family: "MonaspaceKrypton"
     style:  Bold
   italic:
-    # family: "JetBrainsMonoNerdFont"
+    family: "JetBrainsMonoNerdFont"
     # family: "BerkeleyMono Nerd Font Mono"
-    family: "MonaspaceNeon"
+    # family: "MonaspaceNeon"
     # family: "MonaspaceArgon"
     # family: "MonaspaceXenon"
     # family: "MonaspaceRadon"
     # family: "MonaspaceKrypton"
     style:  Italic
   bold_italic:
-    # family: "JetBrainsMonoNerdFont"
+    family: "JetBrainsMonoNerdFont"
     # family: "BerkeleyMono Nerd Font Mono"
-    family: "MonaspaceNeon"
+    # family: "MonaspaceNeon"
     # family: "MonaspaceArgon"
     # family: "MonaspaceXenon"
     # family: "MonaspaceRadon"
