@@ -26,3 +26,13 @@ sed -i "/^#.*monitor=DP-$DP_NUMBER,/! s/monitor=DP-[0-9]*,/monitor=DP-$DP_NUMBER
 
 echo "Configuration updated for HDMI-A-$HDMI_NUMBER and DP-$DP_NUMBER"
 
+
+# Update waybar configuration
+JSON_FILE="$HOME/.config/waybar/config"
+
+# Update the "output" value in the JSON file
+sed -i "s/\"output\": \"DP-[0-9]*\",/\"output\": \"DP-$DP_NUMBER\",/" "$JSON_FILE"
+
+
+echo "Configuration updated in waybar"
+
