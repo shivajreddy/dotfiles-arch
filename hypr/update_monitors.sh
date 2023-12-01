@@ -36,3 +36,5 @@ sed -i "s/\"output\": \"DP-[0-9]*\",/\"output\": \"DP-$DP_NUMBER\",/" "$JSON_FIL
 
 echo "Configuration updated in waybar"
 
+swww img /home/shiva/Pictures/SlideShow/space-ppl.jpg
+
