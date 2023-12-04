@@ -4,6 +4,7 @@ text/css=Alacritty.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 text/html=firefox.desktop;
+image/png=org.nomacs.ImageLounge.desktop;feh.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
@@ -20,3 +21,4 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
+image/png=feh.desktop
