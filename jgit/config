@@ -7,3 +7,9 @@
 [filesystem "JetBrains s.r.o.|17.0.9|/dev/nvme0n1p6"]
 	timestampResolution = 7737 nanoseconds
 	minRacyThreshold = 5513 microseconds
+[filesystem "N/A|21|tmpfs"]
+	timestampResolution = 2990 nanoseconds
+	minRacyThreshold = 4803 microseconds
+[filesystem "Oracle Corporation|17|tmpfs"]
+	timestampResolution = 4131 nanoseconds
+	minRacyThreshold = 5402 microseconds

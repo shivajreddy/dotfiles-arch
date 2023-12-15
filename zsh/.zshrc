@@ -36,3 +36,5 @@ source $ZSH/oh-my-zsh.sh
 eval "$(starship init zsh)"
 
 # echo ".zshrc is loaded"
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit ; compinit
