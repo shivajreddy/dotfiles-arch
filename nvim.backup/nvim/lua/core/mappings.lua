@@ -24,10 +24,16 @@ M.general = {
     ["<C-k>"] = { "<C-w>k", "Window up" },
 
     -- save
-    ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
+    -- ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
+    ["<leader>s"] = { "<cmd> w <CR>", "Save file" },
 
     -- Copy all
     ["<C-c>"] = { "<cmd> %y+ <CR>", "Copy whole file" },
+
+    -- split horizontal, vertical and close
+    ["<leader>v"] = {":vsplit<CR>"},
+    ["<leader>h"] = {":split<CR>"},
+    ["<leader>cx"] = {":close<CR>"},
 
     -- line numbers
     ["<leader>n"] = { "<cmd> set nu! <CR>", "Toggle line number" },
@@ -286,7 +292,7 @@ M.telescope = {
     ["<leader>pt"] = { "<cmd> Telescope terms <CR>", "Pick hidden term" },
 
     -- theme switcher
-    ["<leader>th"] = { "<cmd> Telescope themes <CR>", "Nvchad themes" },
+    -- ["<leader>th"] = { "<cmd> Telescope themes <CR>", "Nvchad themes" },
 
     ["<leader>ma"] = { "<cmd> Telescope marks <CR>", "telescope bookmarks" },
   },
@@ -342,15 +348,16 @@ M.nvterm = {
       "Toggle vertical term",
     },
 
-    -- new
-    ["<leader>h"] = {
+    -- new horizontal terminal
+    ["<leader>th"] = {
       function()
         require("nvterm.terminal").new "horizontal"
       end,
       "New horizontal term",
     },
 
-    ["<leader>v"] = {
+    -- new vertical terminal
+    ["<leader>tv"] = {
       function()
         require("nvterm.terminal").new "vertical"
       end,
