@@ -1,0 +1,35 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=false
+
+[MainWindow]
+1920x1080 screen: Window-Maximized=true
+2 screens: Window-Maximized=true
+3 screens: Window-Maximized=true
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAErAAAD3/wCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgAAAAA4AAAD3/////8A///+AAAO/AAACBcAAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgIAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Desktop/Monthly Check In 07,08,09.pdf
+File10[$e]=$HOME/pCloudDrive/Files/Documents/GreenCard/Benificiary/Marriage Certificate.pdf
+File2[$e]=$HOME/Downloads/ISLP_website.pdf
+File3[$e]=$HOME/pCloudDrive/Files/Documents/1_1_24, 4_16 PM Microsoft Lens.pdf(1).pdf
+File4[$e]=$HOME/pCloudDrive/Files/Documents/scan0029.pdf
+File5[$e]=$HOME/pCloudDrive/Files/Documents/GreenCard/BirthCertificate.pdf
+File6[$e]=$HOME/pCloudDrive/Files/Documents/ID/SivaReddy Kondamadugula Passport-FrontBack.pdf
+File7[$e]=$HOME/pCloudDrive/Files/Documents/ID/Visa.pdf
+File8[$e]=$HOME/pCloudDrive/Files/Documents/OPT Extension/I94-SivaReddyK-Official Website.pdf
+File9[$e]=$HOME/pCloudDrive/Files/Documents/OPT Extension/SivaReddy-OPT-i20.pdf
+Name1[$e]=Monthly Check In 07,08,09.pdf
+Name10[$e]=Marriage Certificate.pdf
+Name2[$e]=ISLP_website.pdf
+Name3[$e]=1_1_24, 4_16 PM Microsoft Lens.pdf(1).pdf
+Name4[$e]=scan0029.pdf
+Name5[$e]=BirthCertificate.pdf
+Name6[$e]=SivaReddy Kondamadugula Passport-FrontBack.pdf
+Name7[$e]=Visa.pdf
+Name8[$e]=I94-SivaReddyK-Official Website.pdf
+Name9[$e]=SivaReddy-OPT-i20.pdf
