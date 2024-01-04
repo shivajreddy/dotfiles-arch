@@ -1,0 +1,39 @@
+2024-01-04 11:39:40 | [33mwarn[39m: window#validateWindowState: unexpected type of state values 
+2024-01-04 11:39:40 | [33mwarn[39m: [AppUpdater][explicit: false][state: [object Object]]-- currentVersion {
+  "options": {},
+  "loose": false,
+  "includePrerelease": false,
+  "raw": "2.4.10",
+  "major": 2,
+  "minor": 4,
+  "patch": 10,
+  "prerelease": [],
+  "build": [],
+  "version": "2.4.10"
+}
+2024-01-04 11:39:40 | [33mwarn[39m: [AppUpdater][explicit: false][state: [object Object]]-- onStateChanged {
+  "type": "IDLE",
+  "updateType": 0,
+  "explicit": false
+} {
+  "type": "UNINITIALIZED"
+}
+2024-01-04 11:40:29 | [33mwarn[39m: [AppUpdater][explicit: false][state: [object Object]]-- currentVersion {
+  "options": {},
+  "loose": false,
+  "includePrerelease": false,
+  "raw": "2.4.10",
+  "major": 2,
+  "minor": 4,
+  "patch": 10,
+  "prerelease": [],
+  "build": [],
+  "version": "2.4.10"
+}
+2024-01-04 11:40:29 | [33mwarn[39m: [AppUpdater][explicit: false][state: [object Object]]-- onStateChanged {
+  "type": "IDLE",
+  "updateType": 0,
+  "explicit": false
+} {
+  "type": "UNINITIALIZED"
+}

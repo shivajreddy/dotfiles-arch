@@ -1,0 +1,10 @@
+{
+	"screenSize": {
+		"x": 962,
+		"y": 529,
+		"width": 956,
+		"height": 522
+	},
+	"localServerPort": 3658,
+	"localServerIsStart": true
+}

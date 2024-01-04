@@ -1,0 +1,1 @@
+const extensions = [];const errors = [];module.exports = {extensions,errors}
