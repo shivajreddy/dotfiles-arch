@@ -6,15 +6,15 @@
     // General Settings
 
     // Position TOP
-    "layer": "top",
-    "margin-top": 0,
-    "margin-bottom": 0,
+    //"layer": "top",
+    //"margin-top": 0,
+    //"margin-bottom": 0,
 
 
     // Position BOTTOM
-    // "position": "bottom",
-    // "margin-top": 0,
-    // "margin-bottom": 14,
+    "position": "bottom",
+    //"margin-top": 0,
+    //"margin-bottom": 14,
     
     "layer": "top",
     "height": 14,
@@ -27,7 +27,7 @@
 
     // Modules Left
     "modules-left": [
-        "custom/archlogo",
+        //"custom/archlogo",
         //"custom/appmenu",
         // "custom/wallpaper",
         "wlr/taskbar",
@@ -43,14 +43,16 @@
     // Modules Right    
     "modules-right": [
         //"custom/updates",
+        "keyboard-state",
         "pulseaudio",
         "bluetooth",
         "group/hardware",
         "battery", 
         //"custom/cliphist",
-        //"network",
+        "network",
         //"custom/exit",
         "clock",
+        //"clock2",
 	"custom/swaync"
     ],
 
