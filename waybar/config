@@ -75,23 +75,101 @@
         ]
     }
 },
+// Show only on 2nd monitor. next object has the settings of
 {
-    // Show only on monitor.
-    "output": "DP-4",
-    //"output": "DP-1",
+    // waybar on another output
+    "output": "HDMI-A-1",
+    //"output": "HDMI-A-3",
 
     // General Settings
 
     // Position TOP
-    "layer": "top",
-    "margin-top": 0,
-    "margin-bottom": 0,
+    //"layer": "top",
+    //"margin-top": 0,
+    //"margin-bottom": 0,
 
 
     // Position BOTTOM
-    // "position": "bottom",
-    // "margin-top": 0,
-    // "margin-bottom": 14,
+    "position": "bottom",
+    //"margin-top": 0,
+    //"margin-bottom": 14,
+    
+    "layer": "top",
+    "height": 14,
+    "margin-left": 0,
+    "margin-right": 0,    
+    "spacing": 0,
+
+    // Load Modules
+    "include": ["~/.config/waybar/modules.json"],
+
+    // Modules Left
+    "modules-left": [
+        //"custom/archlogo",
+        //"custom/appmenu",
+        // "custom/wallpaper",
+        "wlr/taskbar",
+        // "group/quicklinks",
+        "hyprland/window"
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+        //"custom/updates",
+        "keyboard-state",
+        "pulseaudio",
+        "bluetooth",
+        "group/hardware",
+        "battery", 
+        //"custom/cliphist",
+        "network",
+        //"custom/exit",
+        "clock",
+        //"clock2",
+	"custom/swaync"
+    ],
+
+    // Group Quicklinks
+    "group/quicklinks": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/filemanager",
+            "custom/brave",
+         ]
+    },
+
+    // Group Hardware
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            //"disk",
+            "cpu",
+            "memory"
+        ]
+    }
+},
+// Show only on 3rd monitor.
+{
+    //"output": "DP-4",
+    "output": "DP-1",
+
+    // General Settings
+
+    // Position TOP
+    //"layer": "top",
+    //"margin-top": 0,
+    //"margin-bottom": 0,
+
+
+    // Position BOTTOM
+    "position": "bottom",
+    "margin-top": 0,
+    "margin-bottom": 0,
     
     "layer": "top",
     "height": 14,

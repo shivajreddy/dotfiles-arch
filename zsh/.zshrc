@@ -20,6 +20,8 @@ alias gitsave="gaa && gcmsg '.' && ggpush"
 alias p="pacman"
 alias todo="cd ~/todo && vi todo.md"
 
+alias nexus="cd Projects/nexus/backend/nexus && pva && uvicorn app.main:app --reload"
+
 
 plugins=(git
 	zsh-autosuggestions
@@ -38,3 +40,11 @@ eval "$(starship init zsh)"
 # echo ".zshrc is loaded"
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit ; compinit
+
+
+# Open apps in wayland by default, instead of x11
+# if some apps dont open, then explicitly open them in x11
+# https://luxagraf.net/src/guide-to-switching-i3-to-sway
+export XDG_SESSION_TYPE=wayland 
+export GDK_BACKEND=wayland
+

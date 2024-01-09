@@ -3,33 +3,33 @@ FullScreen=false
 
 [General]
 LockSidebar=true
-ShowSidebar=false
+ShowSidebar=true
 
 [MainWindow]
 1920x1080 screen: Window-Maximized=true
 2 screens: Window-Maximized=true
 3 screens: Window-Maximized=true
-State=AAAA/wAAAAD9AAAAAQAAAAAAAAErAAAD3/wCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgAAAAA4AAAD3/////8A///+AAADvAAAA+AAAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgIAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAQAAAAAAAABaAAADsvwCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgEAAAA3AAADsgAAANkA///+AAADXAAAA7IAAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgIAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/pCloudDrive/Files/Documents/1_1_24, 4_16 PM Microsoft Lens.pdf(1).pdf
-File10[$e]=$HOME/Downloads/ISLP_website.pdf
-File2[$e]=$HOME/pCloudDrive/Files/Documents/scan0029.pdf
-File3[$e]=$HOME/pCloudDrive/Files/Documents/GreenCard/BirthCertificate.pdf
-File4[$e]=$HOME/pCloudDrive/Files/Documents/ID/SivaReddy Kondamadugula Passport-FrontBack.pdf
-File5[$e]=$HOME/pCloudDrive/Files/Documents/ID/Visa.pdf
-File6[$e]=$HOME/pCloudDrive/Files/Documents/OPT Extension/I94-SivaReddyK-Official Website.pdf
-File7[$e]=$HOME/pCloudDrive/Files/Documents/OPT Extension/SivaReddy-OPT-i20.pdf
-File8[$e]=$HOME/pCloudDrive/Files/Documents/GreenCard/Benificiary/Marriage Certificate.pdf
-File9[$e]=$HOME/Projects/MyPython/sandbox/binarytree.gv.pdf
-Name1[$e]=1_1_24, 4_16 PM Microsoft Lens.pdf(1).pdf
-Name10[$e]=ISLP_website.pdf
-Name2[$e]=scan0029.pdf
-Name3[$e]=BirthCertificate.pdf
-Name4[$e]=SivaReddy Kondamadugula Passport-FrontBack.pdf
-Name5[$e]=Visa.pdf
-Name6[$e]=I94-SivaReddyK-Official Website.pdf
-Name7[$e]=SivaReddy-OPT-i20.pdf
-Name8[$e]=Marriage Certificate.pdf
-Name9[$e]=binarytree.gv.pdf
+File1[$e]=$HOME/pCloudDrive/Files/Documents/scan0029.pdf
+File10[$e]=$HOME/Downloads/[Elements of Programming Interviews] Adnan Aziz, Tsung-Hsien Lee, Amit Prakash - Elements of Programming Interviews in Python_ The Insiders’ Guide (2016, CreateSpace Independent Publishing Platform) - libgen.li.pdf
+File2[$e]=$HOME/pCloudDrive/Files/Documents/GreenCard/BirthCertificate.pdf
+File3[$e]=$HOME/pCloudDrive/Files/Documents/ID/SivaReddy Kondamadugula Passport-FrontBack.pdf
+File4[$e]=$HOME/pCloudDrive/Files/Documents/ID/Visa.pdf
+File5[$e]=$HOME/pCloudDrive/Files/Documents/OPT Extension/I94-SivaReddyK-Official Website.pdf
+File6[$e]=$HOME/pCloudDrive/Files/Documents/OPT Extension/SivaReddy-OPT-i20.pdf
+File7[$e]=$HOME/pCloudDrive/Files/Documents/GreenCard/Benificiary/Marriage Certificate.pdf
+File8[$e]=$HOME/Projects/MyPython/sandbox/binarytree.gv.pdf
+File9[$e]=$HOME/Downloads/ISLP_website.pdf
+Name1[$e]=scan0029.pdf
+Name10[$e]=[Elements of Programming Interviews] Adnan Aziz, Tsung-Hsien Lee, Amit Prakash - Elements of Programming Interviews in Python_ The Insiders’ Guide (2016, CreateSpace Independent Publishing Platform) - libgen.li.pdf
+Name2[$e]=BirthCertificate.pdf
+Name3[$e]=SivaReddy Kondamadugula Passport-FrontBack.pdf
+Name4[$e]=Visa.pdf
+Name5[$e]=I94-SivaReddyK-Official Website.pdf
+Name6[$e]=SivaReddy-OPT-i20.pdf
+Name7[$e]=Marriage Certificate.pdf
+Name8[$e]=binarytree.gv.pdf
+Name9[$e]=ISLP_website.pdf

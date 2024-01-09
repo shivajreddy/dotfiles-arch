@@ -16,7 +16,8 @@
 
 window#waybar {
     /*background: transparent;*/
-    background-color: @crust;
+    /* background-color: @crust; */
+    background-color: @base;
     /*border-bottom: 1px solid @text;*/
     /*border: 1px solid @mantle;*/
     color: @text;
