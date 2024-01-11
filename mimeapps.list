@@ -6,6 +6,7 @@ x-scheme-handler/https=firefox.desktop;
 text/html=firefox.desktop;
 image/png=org.nomacs.ImageLounge.desktop;feh.desktop;
 application/pdf=okularApplication_pdf.desktop;
+image/webp=feh.desktop;org.nomacs.ImageLounge.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
