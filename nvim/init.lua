@@ -3,9 +3,19 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+vim.cmd("set number")
+vim.cmd("set relativenumber")
 
--- Set leader
+-- Set Leader
 vim.g.mapleader = " "
+
+-- KEYMAPPINGS: NVIM
+vim.keymap.set('n', '<Leader>n', ':noh<CR>')
+vim.keymap.set('n', '<C-d>', '<C-d>:normal! zz<CR>')
+vim.keymap.set('n', '<Leader>rn', ':set relativenumber!<CR>')
+
+vim.keymap.set('n', '<Leader>e', ':Neotree filesystem reveal left<CR>')
+vim.keymap.set('n', '<Leader>s', ':w<CR>')
 
 -- Install Lazy.nvim if not installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -21,19 +31,22 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Plugins - load
-local plugins = {
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  { 'nvim-telescope/telescope.nvim', tag = '0.1.5',
-    dependencies = { 'nvim-lua/plenary.nvim' }
-  },
-  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
-}
 
--- Options - setup
+
+-- giving plugins their own directory
+-- NVIM looks for folder called `~/.config/nvim/lua/`
+-- main plugins file is `plugins.lua`
+-- This also treats all .lua files to return a table {} and all such setup-config
+-- will be included in the lazy-setup. Also lazy loads them on change
+require("lazy").setup("plugins")
+
+---- LAZY.nvim
+
+-- 2. Lazy Options - setup
 local opts = {}
-
+-- 3. Set up lazy plugin with lazyplugins and lazy options
 require("lazy").setup(plugins, opts)
+
 
 -- configure tree-sitter plugin
 local config = require("nvim-treesitter.configs")
@@ -44,16 +57,6 @@ config.setup({
   indent = { enable = true },
 })
 
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
-vim.keymap.set('n', '<leader>n', ':noh<CR>')
-
--- Set up theme
-require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
 
 
