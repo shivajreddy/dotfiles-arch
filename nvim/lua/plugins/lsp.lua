@@ -29,7 +29,50 @@ return {
       local lspconfig = require('lspconfig')
       -- Configuration for each of our language server
       lspconfig.lua_ls.setup {}
-      lspconfig.pyright.setup {}
+      lspconfig.pyright.setup {
+        on_attach = on_attach,
+    capabilities = lsp_capabilities,
+    settings = {
+        python = {
+            analysis = {
+                diagnosticSeverityOverrides = {
+                    reportPropertyTypeMismatch = true,
+                    reportImportCycles = "warning",
+                    reportUnusedFunction = "warning",
+                    reportDuplicateImport = "warning",
+                    reportPrivateUsage = "warning",
+                    reportTypeCommentUsage = "warning",
+                    reportConstantRedefinition = "error",
+                    reportDeprecated = "warning",
+                    reportIncompatibleMethodOverride = "warning",
+                    reportIncompatibleVariableOverride = "error",
+                    reportInconsistentConstructor = "error",
+                    reportOverlappingOverload = "error",
+                    reportMissingSuperCall = "error",
+                    reportUnititializedInstanceVariable = "error",
+                    reportUnknownParameterType = "warning",
+                    reportUnknownArgumentType = "warning",
+                    reportUnknownLambdaType = "warning",
+                    reportUnknownVariableType = "warning",
+                    reportUnknownMemberType = "warning",
+                    reportMissingParameterType = "error",
+                    reportMissingTypeArgument = "warning",
+                    reportUnnecessaryIsInstance = "warning",
+                    reportUnnecessaryCast = "warning",
+                    reportUnnecessaryComparison = "warning",
+                    reportUnnecessaryContains = "warning",
+                    reportAssertAlwaysTrue = "warning",
+                    reportSelfClsParameterName = "error",
+                    reportImplicitStringConcatenation = "warning",
+                    reportUnusedExpression = "warning",
+                    reportUnnecessaryTypeIgnoreComment = "warning",
+                    reportMatchNotExhaustive = "error",
+                    reportShadowedImports = "error",
+                },
+            },
+        },
+    },
+      }
       vim.keymap.set('n', 'H', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
