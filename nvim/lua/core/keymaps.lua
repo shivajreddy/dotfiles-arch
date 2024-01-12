@@ -4,6 +4,7 @@ vim.keymap.set('n', '<C-d>', '<C-d>:normal! zz<CR>')
 vim.keymap.set('n', '<Leader>rn', ':set relativenumber!<CR>')
 
 vim.keymap.set('n', '<Leader>e', ':Neotree filesystem reveal left<CR>')
+vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>')
 vim.keymap.set('n', '<Leader>s', ':w<CR>')
 
 
