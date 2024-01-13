@@ -1,12 +1,14 @@
 return {
+  {"saadparwaiz1/cmp_luasnip"},
+  {"rafamadriz/friendly-snippets"},
 	{
 		"L3MON4D3/LuaSnip",
 		dependencies = { "saadparwaiz1/cmp_luasnip", "rafamadriz/friendly-snippets" },
 	},
 	{ "hrsh7th/nvim-cmp" },
 	config = function()
-		require("luasnip.loaders.from_vscode").lazy_load()
 		local cmp = require("cmp")
+		require("luasnip.loaders.from_vscode").lazy_load()
 		cmp.setup({
 			snippet = {
 				-- REQUIRED - you must specify a snippet engine
