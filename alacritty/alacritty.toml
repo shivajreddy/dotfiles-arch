@@ -2,7 +2,8 @@ import = ["/home/shiva/.config/alacritty/themes/catppuccin-mocha.toml"]
 
 [shell]
 program = "/usr/bin/zsh"
-args = ["-l", "-c", "tmux attach || tmux"]
+args = ["-l", "-c", "tmux"]
+# args = ["-l", "-c", "tmux attach || tmux"]
 
 
 [env]
