@@ -29,3 +29,5 @@ vim.keymap.set('n', '<Leader>x', ':wq<CR>')
 --vim.keymap.set('n', '<Leader>q', ':q!<CR>')
 
 vim.keymap.set('n', '<Leader>gf', vim.lsp.buf.format, {})
+
+vim.keymap.set('n', '<Leader>/', '<gcc>')
