@@ -19,7 +19,11 @@ vim.opt.rtp:prepend(lazypath)
 -- all .lua files inside the plugins directory are expected to return a table {}
 -- and all their setup-config can be definied with the `config` variable inside that table
 -- then lazy will install/initialize and then does setup. Also lazy loads them on change.
-require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, {})
+require("lazy").setup({
+	{ import = "plugins" },
+	{ import = "plugins.lsp" },
+	{ import = "plugins.auto-complete" },
+}, {})
 
 -- 3. Set up lazy plugin with lazyplugins and lazy options
 --local opts = {}

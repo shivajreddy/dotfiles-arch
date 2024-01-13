@@ -1,19 +1,21 @@
 return {
-	"numToStr/Comment.nvim",
-	opts = {
-		---Add a space b/w comment and the line
-		padding = true,
-		---Whether the cursor should stay at its position
-		sticky = true,
-		---Lines to be ignored while (un)comment
-		ignore = nil,
-		---LHS of toggle mappings in NORMAL mode
-		toggler = {
-			---Line-comment toggle keymap
-			line = "gcc",
-			---Block-comment toggle keymap
-			block = "gbc",
-		},
-	},
-	lazy = false,
+  "numToStr/Comment.nvim",
+  keys = {
+    { "gcc", mode = "n",          desc = "Comment toggle current line" },
+    { "gc",  mode = { "n", "o" }, desc = "Comment toggle linewise" },
+    { "gc",  mode = "x",          desc = "Comment toggle linewise (visual)" },
+    { "gbc", mode = "n",          desc = "Comment toggle current block" },
+    { "gb",  mode = { "n", "o" }, desc = "Comment toggle blockwise" },
+    { "gb",  mode = "x",          desc = "Comment toggle blockwise (visual)" },
+  },
+  opts = {
+    padding = true, ---Add a space b/w comment and the line
+    sticky = true, ---Whether the cursor should stay at its position
+    ignore = nil, ---Lines to be ignored while (un)comment
+    toggler = { ---LHS of toggle mappings in NORMAL mode
+      line = "gcc",
+      block = "gbc",
+    },
+  },
+  lazy = false,
 }
