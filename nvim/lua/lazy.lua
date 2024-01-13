@@ -22,7 +22,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{ import = "plugins" },
 	{ import = "plugins.lsp" },
-	{ import = "plugins.auto-complete" },
+	-- { import = "plugins.auto-complete" },
 }, {})
 
 -- 3. Set up lazy plugin with lazyplugins and lazy options

@@ -9,8 +9,6 @@ live_config_reload = true
 # action = "ClearHistory"
 # action = "ClearLogNotice"
 
-
-
 [shell]
 program = "/usr/bin/zsh"
 args = ["-l", "-c", "tmux"]
@@ -60,8 +58,7 @@ multiplier = 3
 opacity = 1
 dynamic_padding = false
 
-
-padding.x = 20
+padding.x = 6
 padding.y = 6
 
 decorations = "full"

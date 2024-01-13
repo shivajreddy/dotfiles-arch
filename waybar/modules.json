@@ -241,7 +241,7 @@
         "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
         //"format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth": "{volume}%",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
@@ -260,7 +260,7 @@
 
     // Bluetooth
     "bluetooth": {
-        "format-connected": "󰦢",
+        "format-connected": "",
         "format-disabled": "",
         "format-off": "",
         "interval": 30,
