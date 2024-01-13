@@ -1,10 +1,21 @@
 import = ["/home/shiva/.config/alacritty/themes/catppuccin-mocha.toml"]
 
+
+live_config_reload = true
+
+# [key_bindings]
+[[keyboard.bindings]]
+key = "L"
+mods = "Shift"
+action = "ClearLogNotice"
+# action = "ClearHistory"
+
+
+
 [shell]
 program = "/usr/bin/zsh"
 args = ["-l", "-c", "tmux"]
 # args = ["-l", "-c", "tmux attach || tmux"]
-
 
 [env]
 TERM = "xterm-256color"
@@ -15,38 +26,49 @@ draw_bold_text_with_bright_colors = true
 [font]
 size = 12
 
-[font.bold]
-family = "JetBrainsMonoNerdFont"
-style = "Bold"
+normal.family = "JetBrainsMonoNerdFont"
+normal.style = "Regular"
 
-[font.bold_italic]
-family = "JetBrainsMonoNerdFont"
-style = "Bold Italic"
+bold.family = "JetBrainsMonoNerdFont"
+bold.style = "Bold"
 
-[font.italic]
-family = "JetBrainsMonoNerdFont"
-style = "Italic"
+bold_italic.family = "JetBrainsMonoNerdFont"
+bold_italic.style = "Bold Italic"
 
-[font.normal]
-family = "JetBrainsMonoNerdFont"
-style = "Regular"
+italic.family = "JetBrainsMonoNerdFont"
+italic.style = "Italic"
 
-[scrolling]
-history = 10000
-multiplier = 3
+offset.x = 0
+offset.y = 0
+
+glyph_offset.x = 0
+glyph_offset.y = 0
+
+[mouse]
+hide_when_typing = true
+
 
 [selection]
 save_to_clipboard = true
 
+[scrolling]
+history = 10000
+multiplier = 3
+# auto_scroll = true
+
 
 [window]
-opacity = 0.85
-# opacity = 0.3
+opacity = 0.75
+dynamic_padding = false
 
-[window.class]
-general = "Alacritty"
-instance = "Alacritty"
 
-[window.padding]
-x = 10
-y = 10
+padding.x = 0
+padding.y = 0
+
+decorations = "full"
+
+startup_mode = "Maximized"
+
+class.general = "Alacritty"
+class.instance = "Alacritty"
+

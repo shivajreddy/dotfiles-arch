@@ -27,7 +27,7 @@ vim.keymap.set("n", "<C-k>", ":tabprev<CR>", {})
 --vim.keymap.set('n', '<C-l>', ':tabmove +<CR>', {})
 
 -- Close vim
-vim.keymap.set("n", "<Leader>x", ":wq<CR>")
+vim.keymap.set("n", "<Leader>x", ":wq!<CR>")
 --vim.keymap.set('n', '<Leader>q', ':q!<CR>')
 
 vim.keymap.set("n", "<Leader>gf", vim.lsp.buf.format, {})
