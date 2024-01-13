@@ -1,5 +1,13 @@
 import = ["/home/shiva/.config/alacritty/themes/catppuccin-mocha.toml"]
 
+[shell]
+program = "/usr/bin/zsh"
+args = ["-l", "-c", "tmux attach || tmux"]
+
+
+[env]
+TERM = "xterm-256color"
+
 [colors]
 draw_bold_text_with_bright_colors = true
 
@@ -29,8 +37,6 @@ multiplier = 3
 [selection]
 save_to_clipboard = true
 
-[shell]
-program = "/usr/bin/zsh"
 
 [window]
 opacity = 0.85

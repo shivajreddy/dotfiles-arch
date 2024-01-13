@@ -6,6 +6,8 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.cmd("set relativenumber")
 
+vim.cmd("set clipboard=unnamedplus")
+
 -- Set Leader
 vim.g.mapleader = " "
 
