@@ -3,12 +3,11 @@ import = ["/home/shiva/.config/alacritty/themes/catppuccin-mocha.toml"]
 
 live_config_reload = true
 
-# [key_bindings]
-[[keyboard.bindings]]
-key = "L"
-mods = "Shift"
-action = "ClearLogNotice"
+# [[keyboard.bindings]]
+# key = "L"
+# mods = "Control|Shift"
 # action = "ClearHistory"
+# action = "ClearLogNotice"
 
 
 
@@ -58,12 +57,12 @@ multiplier = 3
 
 
 [window]
-opacity = 0.75
+opacity = 1
 dynamic_padding = false
 
 
-padding.x = 0
-padding.y = 0
+padding.x = 20
+padding.y = 6
 
 decorations = "full"
 

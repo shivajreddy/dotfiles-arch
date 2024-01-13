@@ -5,7 +5,9 @@ return {
 	{
 		"williamboman/mason.nvim",
 		config = function()
-			require("mason").setup()
+			require("mason").setup({},{
+        ensure_installed = {}
+      })
 		end,
 	},
 	-- 2. Install packages via mason from below settings
