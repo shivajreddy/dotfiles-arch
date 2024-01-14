@@ -47,3 +47,7 @@ vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", {desc = "window left
 vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", {desc = "window left"})
 vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", {desc = "window left"})
 
+
+vim.keymap.set("n", "<F9>", ":DapToggleBreakpoint<CR>")
+-- vim.keymap.set("n", "<S-F10>", function() require('dap-python').test_method() end)
+vim.keymap.set("n", "<S-F10>", function() print("wtf") end)
