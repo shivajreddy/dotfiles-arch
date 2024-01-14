@@ -1,0 +1,9 @@
+[Unit]
+Description=xBanish - Automatically hide the mouse cursor
+
+[Service]
+ExecStart=/usr/bin/xbanish
+Restart=always
+
+[Install]
+WantedBy=default.target
