@@ -11,3 +11,4 @@ vim.cmd("set clipboard=unnamedplus")
 -- Set Leader
 vim.g.mapleader = " "
 
+vim.cmd("set keywordprg=:Man")
