@@ -1,5 +1,5 @@
 [Added Associations]
-image/jpeg=swappy.desktop;
+image/jpeg=org.nomacs.ImageLounge.desktop;swappy.desktop;
 text/css=Alacritty.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;

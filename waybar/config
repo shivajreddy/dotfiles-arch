@@ -78,8 +78,8 @@
 // Show only on 2nd monitor. next object has the settings of
 {
     // waybar on another output
-    //"output": "HDMI-A-1",
-    "output": "HDMI-A-3",
+    "output": "HDMI-A-1",
+    //"output": "HDMI-A-3",
 
     // General Settings
 
@@ -155,8 +155,8 @@
 },
 // Show only on 3rd monitor.
 {
-    //"output": "DP-1",
-    "output": "DP-4",
+    "output": "DP-1",
+    //"output": "DP-4",
 
     // General Settings
 
