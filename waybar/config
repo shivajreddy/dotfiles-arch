@@ -1,4 +1,5 @@
-[{
+[
+{
     // Show only on monitor. next object has the settings of
     // waybar on another output
     "output": "eDP-1",

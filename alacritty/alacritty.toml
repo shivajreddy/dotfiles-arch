@@ -11,7 +11,8 @@ live_config_reload = true
 
 [shell]
 program = "/usr/bin/zsh"
-args = ["-l", "-c", "tmux"]
+args = ["-l", "-c", "tmux"] # creates new session every time
+# this will keep attaching to old session, so you can only have 1 session
 # args = ["-l", "-c", "tmux attach || tmux"]
 
 [env]
